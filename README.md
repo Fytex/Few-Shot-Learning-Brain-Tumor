@@ -4,10 +4,10 @@
 Both trained models are inside website's folder. However, if you want to train them again you have to build the dataset by downloading it from https://www.kaggle.com/datasets/sartajbhuvaji/brain-tumor-classification-mri, put all images together into separate files by classes and executed `brain_dataset.py` to distribute the files automatically into sub-folders as we wanted.
 
 
-AP_Pairs -> Siamese Network using Pairs (Contrastive Loss)
+AP_Pairs -> Siamese Network using Pairs (Contrastive Loss) 
 AP_Triples -> Siamese Network using Triples (Triplet Loss)
 
-AP_Pairs didn't obtain much better results compared to the classification problem with only a VGG16.
+AP_Pairs didn't obtain much better results compared to the classification problem with only a VGG16. 
 AP_Triples got better results than AP_Pairs and classifcation only.
 
 To execute the website you only need to run these commands after cloning this repository:
