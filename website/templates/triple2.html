@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href='/staticFiles/main.css' />
+  </head>
+  <body>
+    <h1>Classificação de Tumores Cerebrais</h1>
+ 
+Âncora: 
+<img src="data:;base64,{{ img1 }}"/>
+
+<br>
+Positivo: 
+<img src="data:;base64,{{ img2 }}"/>
+
+<br>
+Negativo: 
+<img src="data:;base64,{{ img3 }}"/>
+
+<br>
+{% if pred == "True": %}
+<p style="color:blue;">Âncora da mesma classe que o Positivo</p>
+{% elif pred == "False" %}
+<p style="color:blue;">Âncora da mesma classe que o Negativo</p>
+{% endif %}
+
+
+<a href="/">
+   <button>Tentar Novamente</button>
+</a>
+  </body>
+</html>
